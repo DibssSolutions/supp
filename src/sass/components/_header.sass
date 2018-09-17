@@ -65,16 +65,36 @@
 	margin-right: 30px
 	vertical-align: top
 	display: inline-block
+	+clr
 	&__btn
+		float: right
 		font-size: 0
 		background-color: transparent
-		vertical-align: top
-		display: inline-block
 		.icon
 			font-size: 37px
 			color: #ff9d11 
+	&__wrap
+		float: right
+		padding-right: 35px
+		margin-left: -335px
+		+clr
 	&__input
-		display: none
+		float: right
+		width: 0
+		transition: width .3s
+		overflow: hidden
+		.is-open &
+			width: 300px
+		input
+			padding: 5px 10px 5px 0
+			width: 300px
+			color: $white
+			font-size: 20px
+			font-family: $openSans 
+			height: 37px
+			border-bottom: 3px solid #636161 
+			background-color: transparent 
+			display: block
 
 .nav
 	opacity: 0

@@ -25,13 +25,15 @@
           <span class="btn-menu__line"></span>
         </button>
         <div class="header__right">
-          <div class="header__search search">
-            <button class="search__btn" type="button">
+          <div class="header__search search js-search">
+            <button class="search__btn js-search-btn" type="button">
               <svg class="icon icon-search">
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
             </button>
-            <div class="search__input"><input type="text"></div>
+            <div class="search__wrap">
+              <div class="search__input"><input type="text"></div>
+            </div>
           </div>
           <div class="header__nav nav">
             <ul class="nav__list">
@@ -72,8 +74,7 @@
             </li>
             <li class="recipe__ingredient">
               <div class="recipe__measure">
-                <span class="recipe__number"> 2</span>
-              </div>
+                <span class="recipe__number"> 2</span> sdt </div>
               <div class="recipe__product">Jus lemon</div>
             </li>
             <li class="recipe__ingredient">
