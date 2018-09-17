@@ -1,26 +1,26 @@
 <!-- begin info -->
 <div class="info">
 	<div class="info__inner inner">
-		<h3 class="info__title title"></h3>
-		<div class="info__description"></div>
+		<h3 class="info__title title">Healthy Info</h3>
+		<div class="info__description">Perkaya wawasan dengan artikel-artikel kesehatan <br>mengenai asupan nutrisi, dampak dari tidak terpenuhinya asupan nutrisi dengan baik hingga perawatan yang tepat untuk penderita kanker.</div>
 		<div class="info__row">
 			{% for article in [
 				{
-					img: '',
+					img: 'info-img-1',
 					date: 'Artikel 20 Januari 2018',
 					title: 'Malnutrisi Bukan Hanya Tentang Gizi Buruk Lho!',
 					text: ['Kasus gizi buruk memang masih marak terjadi. Hal itu pun kerap membuat sebagian orang mempersepsikan malnutrisi adalah gizi buruk itu sendiri. Yang benar, gizi buruk adalah bagian dari malnutrisi, tepatnya malnutrisi berat...'],
 					author: 'Selengkapnya'
 				},
 				{
-					img: '',
+					img: 'info-img-2',
 					date: 'Artikel 20 Januari 2018',
 					title: 'Derita Berlipat Pasien Kanker Alami Malnutrisi, Apa Penyebabnya?',
 					text: ['“Tak ada yang mau mengalami kanker”', 'Setidaknya pesan itu menjadi gambaran betapa mengerikannya kanker selama ini. Tak sedikit yang menyebutkan jika terkena kanker ibarat mengalami kutukan. Bukan berlebihan, karena kenyataannya, selama ini...'],
 					author: 'Selengkapnya'
 				},
 				{
-					img: '',
+					img: 'info-img-3',
 					date: 'Artikel 20 Januari 2018',
 					title: 'Ini Alasan Kenapa Pasien Kanker Perlu Mengganti Pola Makannya',
 					text: ['Beban hidup orang memang kadang berbeda-beda. Ada yang karena faktor sosial-ekonomi, ada pula yang karena masalah kesehatan. Salah satu masalah kesehatan yang kerap mengancap nyawa adalah kanker. Bagi pasien kanker, tak ada cobaan yang maha berat, selain penyakit yang dialaminya...'],
@@ -29,20 +29,33 @@
 			] %}
 			<div class="info__col">
 				<div class="info__article">
-					<div class="info__img" style="background-image: url(./img/{{ article.img }});"></div>
-					<div class="info__wrap">
-						<div class="info__date">{{ article.date }}</div>
-						<div class="info__title">{{ article.title }}</div>
-						<div class="info__text">
-							{% for text in article.text %}
-							<p>{{ text }}</p>
-							{% endfor %}
+					<div class="info__out">
+						<div class="info__img" style="background-image: url(https://via.placeholder.com/550x500"></div>
+						<div class="info__wrap">
+							<div class="info__date">{{ article.date }}</div>
+							<a href="#" class="info__title-sm">{{ article.title }}</a>
+							<div class="info__text">
+								{% for text in article.text %}
+								<p>{{ text }}</p>
+								{% endfor %}
+							</div>
 						</div>
 					</div>
 					<div class="info__author">{{ article.author }}</div>
 				</div>
 			</div>
 			{% endfor %}
+		</div>
+		<div class="info__mail">
+			<a href="#" class="mail-submit">
+				<span class="mail-submit__icon">
+					{{ mixins.icon('email') }}
+				</span>
+				<span class="mail-submit__text"><span class="mail-submit__text-inner">Tanya Produk Kami</span></span>
+			</a>
+		</div>
+		<div class="info__all">
+			<a href="#" class="info__read">Artikel lainnya{{ mixins.icon('down') }}</a>
 		</div>
 	</div>
 </div>

@@ -1,3 +1,5 @@
+import { HTMLBODY } from './constants';
+
 export const mediaWidth = width => window.matchMedia(`(max-width: ${width}px)`).matches;
 
 export const isTouch = () => 'ontouchstart' in window;
@@ -19,4 +21,10 @@ export const LOAD_DATA = props => {
     props.callback(JSON.parse(xhr.responseText));
   };
   xhr.send();
+};
+
+export const SCROLL_TO = position => {
+  HTMLBODY.animate({
+    scrollTop: position
+  }, 700);
 };
