@@ -1,0 +1,79 @@
+<div class="product-page">
+	<div class="product-page__layout">
+		<div class="product-page__inner">
+			<div class="product-page__wrap">
+				<div class="product-page__details">
+					<div class="product-page__title">Apa itu Supportan? direction</div>
+					<div class="product-page__text">
+						<p>Supportan adalah makanan cair kaya nutrisi, rendah 
+							karbohidrat, tinggi protein serta mengandung minyak ikan 
+							yang dirancang untuk memenuhi kebutuhan nutrisi khusus 
+							dan disajikan dalam rasa buah tropis yang enak. Setiap 2 botol 
+							Supportan (400ml) mengandung 2 gram EPA yang mampu 
+							menurunkan peradangan atau inflamasi, meningkatkan massa 
+							otot dan juga imunitas tubuh. Supportan juga mengandung 
+							4 gram serat probiotik per botol yang sehingga bisa menjaga 
+							fungsi saluran cerna.</p>
+					</div>
+					<div class="poduct-page__passage passage">
+						<span class="passage__img">
+							<span class="passage__colors"><img src="./img/colors.png" alt="img"></span>
+							<img src="./img/bottle-icon.png" alt="img">
+						</span>
+						<span class="passage__wrap">
+							<span class="passage__title">Lengkapi Kebutuhan Nutrisimu sekarang!</span>
+							<a href="#" class="passage__link"><span>Dapatkan di sini</span>{{ mixins.icon('right') }}</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="product-page__wrap">
+				<ul class="product-page__list">
+					{% for item in [
+						{
+							text: "Copper Molybdenum, Phosphor",
+							color: "brown"
+						},
+						{
+							text: "Magnesium, Folic Acid",
+							color: "gray"
+						},
+						{
+							text: "Calcium Phosphor, Iodine",
+							color: "light-brown"
+						},
+						{
+							text: "Beta Carotene, Vitamin B5",
+							color: "white-brown"
+						},
+						{
+							text: "Manganese, Vitamin B3",
+							color: "green"
+						},
+						{
+							text: "Chromimum, Vitamin B6",
+							color: "dark-green"
+						},
+						{
+							text: "Copper Zinc",
+							color: "purple"
+						}
+					] %}
+						<li class="product-page__item">
+							<div class="ingredient-name ingredient-name_{{ item.color }}">
+								{{ item.text }}
+							</div>
+							<div class="ingredient-circle ingredient-circle_{{ item.color }}"></div>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<div class="product-page__corner-img product-page__corner-img_left">
+			<img src="./img/top-left.png" alt="img">
+		</div>
+		<div class="product-page__corner-img product-page__corner-img_right">
+			<img src="./img/bottom-right.png" alt="img">
+		</div>
+	</div>
+</div>
