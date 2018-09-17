@@ -1,7 +1,7 @@
 
 .passage
 	position: relative
-	padding: 14px 14px 14px 22px
+	padding: 18px 14px 8px 19px
 	width: 320px
 	text-align: left
 	background-color: white
@@ -38,12 +38,14 @@
 		color: #0d70b7
 		font-weight: 400
 		line-height: 1.1
+		letter-spacing: 0.03em
 	&__link
 		position: relative
 		padding-right: 13px
 		color: #ff9d11
 		font-weight: 700
 		font-size: 18px
+		letter-spacing: 0.03em
 		display: block
 		+hover
 			span
@@ -55,7 +57,7 @@
 			position: absolute
 			top: 4px
 			right: 0
-			font-size: 14px
+			font-size: 18px
 			color: #0f65bb 
 		&:not(:first-child)
 			margin-top: 20px
@@ -72,7 +74,7 @@
 		height: calc(100vh - 57px) 
 		+vertical
 	&__in
-		padding-left: 44px
+		padding: 90px 0 0 60px
 		width: 100%
 		vertical-align: middle
 		font-size: 25px
@@ -89,12 +91,12 @@
 		line-height: 1
 	&__hatch
 		position: absolute
-		top: -20px
-		left: -84px
+		top: -31px
+		left: -97px
 		right: -100px
 		bottom: -20px
 		width: 640px
-		height: 286px
+		height: 291px
 		z-index: -1
 		background-position: 0 0
 		background-size: cover
@@ -105,16 +107,22 @@
 		max-width: 400px
 		color: #636161 
 		&:not(:first-child)
-			margin-top: 40px
+			margin-top: 62px
 	&__passage
 		position: absolute
-		right: 38px
+		right: 53px
 		bottom: 45px
 	&__scroll
 		padding: 17px 0
 		text-align: center
 .slider-hero
 	font-size: 0
+	opacity: 0
+	visibility: hidden
+	transition: opacity .3s, visibility .3s
+	&.slick-initialized
+		opacity: 1
+		visibility: visible
 	.slick-dots
 		position: absolute
 		left: 0
