@@ -1,0 +1,63 @@
+.recipes
+	position: relative
+	margin-top: -37px
+	&__bg
+		position: absolute
+		left: 0
+		right: 0
+		top: 34px
+		bottom: 34px
+		background-position: 50% 
+		background-size: cover
+	&__in
+		position: relative
+		z-index: 1
+	&__out
+		position: relative
+		left: 61%
+		margin-left: -200px
+		width: 480px
+	&__apple
+		position: absolute
+		left: -155px
+		top: -17px
+		width: 298px
+		img
+			max-width: 100%
+			display: block
+	&__broccoli
+		position: absolute
+		right: -83px
+		bottom: 19px
+		z-index: 1
+		width: 118px
+		img
+			max-width: 100%
+			display: block
+	&__inner
+		position: relative
+		padding: 45px 70px 57px 81px
+		min-height: 698px
+		display: flex
+		flex-flow: row wrap
+		align-content: space-between
+		background-color: #ff9d11 
+	&__wrap
+		min-width: 100%
+		flex: 0 0 100%
+	&__title
+		color: $white 
+	&__line
+		margin: 38px 0 0
+		width: 121px 
+		display: block
+	&__text
+		color: #4a4a4a
+		font-size: 24px 
+		line-height: 1.2
+		&:not(:first-child)
+			margin-top: 45px
+	&__footer
+		padding-top: 15px
+		min-width: 100%
+		flex: 0 0 100%
