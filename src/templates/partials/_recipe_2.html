@@ -1,0 +1,60 @@
+{% set ingr = [
+    {
+        num: '75',
+        unit: 'gram',
+        p: 'Mangga segar'
+    }, {
+        num: '2',
+        w: 'sdt',
+        p: 'Jus lemon'
+    }, {
+        num: '150',
+        unit: 'ml',
+        p: 'Supportan'
+    }
+] %}
+{% set order = ['Masukkan mangga segar dan campurkan Supportan ke dalam blender, kemudian haluskan', 'Tambahkan jus lemon
+ ke campuran tersebut, lalu haluskan kembali ', ' Tuang jus mangga ke dalam wadah ', ' Untuk mempercantik, bisa tambahkan buah mangga potong sesuai keinginan '] %}
+
+<div class="recipe">
+    <div class="recipe__image" style="background-image: url(img/recipe_bg.jpg);"></div>
+    <div class="recipe__content" style="background-image: url(img/recipe_bg_2.jpg);">
+        <h3 class="recipe__title">
+            Mango Juice
+        </h3>
+        <div class="recipe__ingredients">
+            <div class="recipe__picture">
+                <span class="recipe__icon">
+                    {{mixins.icon('harvest1')}}
+                </span>
+                <h5 class="recipe__subtitle">bahan-bahan</h5>
+            </div>
+            <ul class="recipe__ingredients-list">
+                {% for item in ingr %}
+                    <li class="recipe__ingredient">
+                        <div class="recipe__measure">
+                            <span class="recipe__number">
+                                {{item.num}}</span>
+                            {{item.unit}}
+                        </div>
+                        <div class="recipe__product">{{item.p}}</div>
+                    </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+        <div class="recipe__actions">
+            <div class="recipe__picture">
+                <span class="recipe__icon">
+                    {{mixins.icon('cooking')}}
+                </span>
+                <h5 class="recipe__subtitle">DIRECTION</h5>
+            </div>
+            <ol class="recipe__actions-list">
+                {% for item in order %}
+                    <li class="recipe__action">{{item}}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</div>
