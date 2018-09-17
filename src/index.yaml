@@ -5,3 +5,5 @@ PageList:
   ready: 50
 - file: product-page.html
   ready: 50
+- file: recipe-2.html
+  ready: 50
