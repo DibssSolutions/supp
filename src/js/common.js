@@ -16,3 +16,4 @@ svg4everybody();
 DOC.ready(components);
 
 if (!isTouch()) BODY.addClass(NO_TOUCH);
+BODY.addClass(LOADED);
