@@ -33,7 +33,7 @@
 						<div class="info__img" style="background-image: url(https://via.placeholder.com/550x500"></div>
 						<div class="info__wrap">
 							<div class="info__date">{{ article.date }}</div>
-							<div class="info__title-sm">{{ article.title }}</div>
+							<a href="#" class="info__title-sm">{{ article.title }}</a>
 							<div class="info__text">
 								{% for text in article.text %}
 								<p>{{ text }}</p>
@@ -45,6 +45,17 @@
 				</div>
 			</div>
 			{% endfor %}
+		</div>
+		<div class="info__mail">
+			<a href="#" class="mail-submit">
+				<span class="mail-submit__icon">
+					{{ mixins.icon('email') }}
+				</span>
+				<span class="mail-submit__text"><span class="mail-submit__text-inner">Tanya Produk Kami</span></span>
+			</a>
+		</div>
+		<div class="info__all">
+			<a href="#" class="info__read">Artikel lainnya{{ mixins.icon('down') }}</a>
 		</div>
 	</div>
 </div>
