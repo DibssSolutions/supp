@@ -13,10 +13,13 @@
         p: 'Supportan'
     }
 ] %}
-{% set order = ['Masukkan mangga segar dan campurkan Supportan ke dalam blender, kemudian haluskan', 'Tambahkan jus lemon
+{% set actions = ['Masukkan mangga segar dan campurkan Supportan ke dalam blender, kemudian haluskan', 'Tambahkan jus lemon
  ke campuran tersebut, lalu haluskan kembali ', ' Tuang jus mangga ke dalam wadah ', ' Untuk mempercantik, bisa tambahkan buah mangga potong sesuai keinginan '] %}
 
 <div class="recipe">
+    <button type="button" class="recipe__close">
+        {{mixins.icon('close')}}
+    </button>
     <div class="recipe__image" style="background-image: url(img/recipe_bg.jpg);"></div>
     <div class="recipe__content" style="background-image: url(img/recipe_bg_2.jpg);">
         <h3 class="recipe__title">
@@ -51,7 +54,7 @@
                 <h5 class="recipe__subtitle">DIRECTION</h5>
             </div>
             <ol class="recipe__actions-list">
-                {% for item in order %}
+                {% for item in actions %}
                     <li class="recipe__action">{{item}}</li>
                 {% endfor %}
             </ol>

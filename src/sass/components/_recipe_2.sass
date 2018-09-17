@@ -1,50 +1,94 @@
 .recipe
-    height: 100vh
-    width: 100vw
+    min-height: 100vh
     display: flex
+    position: relative
+    +sm 
+        flex-flow: column
+    &__close
+        background-color: transparent
+        height: 80px
+        width: 80px
+        border-radius: 50%
+        background-color: #f0890f
+        +vcenter
+        z-index: 10
+        +sm 
+            display: none
+        .icon
+            font-size: 30px
+            color: $white
     &__image
         flex: 0 0 50%
         width: 50%
-        // padding: 100vh
         +cover
+        +sm 
+            width: 100%
+            padding-bottom: 300px
     &__content
         flex: 0 0 50%
         width: 50%
-        padding-top: 140px
-    &_picture
-        .icon
-            fill: #f0f
-            color: #f0f
+        padding-top: 136px
+        background-color: #f7ede0
+        +sm     
+            width: 100%
     &__title
         font-family: $budidaya
         font-size: 48px
-        font-weight: normal
         color: #0d70b7
         font-weight: 700
-        margin-left: 320px
-        margin-bottom: 20px
+        margin-left: 34%
+        margin-bottom: 68px
+        letter-spacing: 0.04em
     &__ingredients, 
     &__actions
         display: flex
     &__picture
         text-align: center
-        flex: 0 0 320px
+        flex: 0 0 34%
     &__icon
         display: block
+        font-size: 0
         .icon
-            font-size: 75px
             color: #ce2617
     &__subtitle
         font-family: $montserrat
-        font-size: 24px
+        font-size: 22px
         font-weight: 600
         color: #ce2617
         text-transform: uppercase
+        margin-top: 18px
+    &__ingredients
+        margin-top: 54px
+        +sm 
+            flex-flow: column
+        .icon 
+            font-size: 80px
+    &__ingredients-list
+        position: relative
+        flex: 0 0 57%
+        &:before, 
+        &:after
+            position: absolute
+            left: 0
+            content: ''
+            height: 2px
+            background-color: #0d70b7
+            width: 100%
+        &:before
+            top: -54px
+            +sm 
+                display: none
+        &:after
+            bottom: 0
     &__ingredient
         display: block
         position: relative
         padding-left: 24px
         margin-bottom: 56px
+        +sm 
+            display: inline-block
+        &:last-child
+            margin-bottom: 90px
         &:after
             content: ''
             position: absolute
@@ -58,24 +102,29 @@
         font-size: 30px
         font-weight: 600
         color: #767474
+        line-height: 1
+        margin-bottom: 14px
     &__number
         font-size: 36px
     &__product
         font-family: $montserrat
         font-size: 24px
+        line-height: 1
         color: #2e7dbb
         font-weight: 600
+    &__actions 
+        margin-top: 74px
+        .icon
+            font-size: 92px
     &__actions-list
         list-style-type: decimal
-        max-width: 540px
+        flex: 0 0 57%
+        padding-left: 28px
+        padding-top: 12px
     &__action
         font-family: $arial
         font-size: 24px
-        font-weight: normal
-        font-style: normal
-        font-stretch: normal
         line-height: 1.5
-        letter-spacing: normal
-        text-align: left
         color: #6b6b6b
-        padding-left: 10px
+        padding-left: 20px
+        margin-bottom: 1.5em
