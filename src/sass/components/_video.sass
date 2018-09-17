@@ -1,0 +1,60 @@
+.video
+	color: $white 
+	font-size: 24px
+	background-color: #0d70b7 
+	&__inner
+	&__row
+		display: flex
+		flex-wrap: wrap
+	&__img-wrap
+		max-width: 50%
+		flex: 0 0 50%
+	&__img
+		margin-left: -15px
+		min-height: 100%
+		background-position: 50% 50% 
+		background-size: cover
+	&__content
+		padding: 54px 0 54px 54px
+		width: 50%
+		flex: 0 0 50%
+	&__head
+		display: flex
+		flex-wrap: wrap
+	&__title
+		padding-right: 20px
+		max-width: 40%
+		flex: 0 0 40%
+	&__text
+		max-width: 60%
+		flex: 0 0 60%
+		text-align: right
+		align-self: flex-end
+	&__container
+		position: relative
+		height: 498px
+		background-position: 50% 50% 
+		background-size: cover
+		display: block
+		+hover
+			.video__play
+				transform: scale(1.2)
+		&:not(:first-child)
+			margin-top: 50px
+	&__play
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -35px 0 0 -35px
+		height: 70px
+		width: 70px
+		border-radius: 50% 
+		border: 7px solid $white
+		transition: transform .3s ease-in-out
+		&:before
+			position: absolute
+			content: "" 
+			top: 50%
+			left: 50%
+			margin: -9px 0 0 -5px
+			+arr(13,18,$white,r)

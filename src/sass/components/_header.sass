@@ -1,0 +1,68 @@
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	padding: 0
+	z-index: 20
+	&__inner
+		margin: 0 auto
+		padding: 0 30px
+		max-width: 1806px
+		+clr
+	&__logo
+		float: left
+		margin-top: 30px
+	&__btn-menu
+		float: right
+	&__right
+		float: right
+		margin-top: 57px
+	&__search
+	&__nav
+
+.logo
+	width: 90px
+	vertical-align: top
+	display: inline-block
+	img
+		max-width: 100%
+		display: block
+
+.btn-menu
+	position: relative
+	margin-top: 57px
+	width: 47px
+	height: 37px
+	background-color: transparent 
+	&__line
+		position: absolute
+		left: 0
+		height: 8px
+		width: 100%
+		background-color: #FF9D11 
+		&:first-child
+			top: 0
+		&:nth-child(2)
+			top: 50%
+			margin-top: -4px
+		&:last-child
+			bottom: 0
+.search
+	margin-right: 30px
+	&__btn
+		font-size: 0
+		background-color: transparent
+		vertical-align: top
+		display: inline-block
+		.icon
+			font-size: 37px
+			color: #ff9d11 
+	&__input
+		display: none
+
+.nav
+	display: none
+	&__list
+	&__item
+	&__link

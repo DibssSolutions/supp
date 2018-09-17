@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-down" viewBox="0 0 55 32">
+    <style>
+        .st0{fill:#979797}
+    </style>
+    <title>
+        Line
+    </title>
+    <g id="Page-1">
+        <path class="st0" d="M28.1 31.9L.7 3.5 3.5.7l24.6 25.4 24-24.9L55 4z" id="Line"/>
+    </g>
+</symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
+    <title>
+        facebook
+    </title>
+    <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-right" viewBox="0 0 22.5 38.6">
+    <style>
+        .st0{fill:#979797}
+    </style>
+    <title>
+        Group
+    </title>
+    <g id="Page-1">
+        <g id="Group" transform="translate(5 4)">
+            <path class="st0" d="M-.6 34.6L-5 30.5 9.3 15.2-5 .1-.6-4l18.1 19.2z" id="Line"/>
+        </g>
+    </g>
+</symbol><symbol id="icon-search" viewBox="0 0 37 37">
+    <style>
+        .st0{fill:#979797}
+    </style>
+    <title>
+        Group
+    </title>
+    <g id="Page-1">
+        <g id="Group" transform="translate(3 3)">
+            <path class="st0" d="M13 29C4.2 29-3 21.8-3 13S4.2-3 13-3s16 7.2 16 16-7.2 16-16 16zm0-26C7.5 3 3 7.5 3 13s4.5 10 10 10 10-4.5 10-10S18.5 3 13 3z" id="Oval"/>
+            <path class="st0" d="M31 34c-.8 0-1.5-.3-2.1-.9l-7.5-7.5c-1.2-1.2-1.2-3.1 0-4.2 1.2-1.2 3.1-1.2 4.2 0l7.5 7.5c1.2 1.2 1.2 3.1 0 4.2-.6.6-1.3.9-2.1.9z" id="Line"/>
+        </g>
+    </g>
+</symbol></svg>

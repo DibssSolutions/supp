@@ -1,0 +1,49 @@
+<!-- begin info -->
+<div class="info">
+	<div class="info__inner inner">
+		<h3 class="info__title title"></h3>
+		<div class="info__description"></div>
+		<div class="info__row">
+			{% for article in [
+				{
+					img: '',
+					date: 'Artikel 20 Januari 2018',
+					title: 'Malnutrisi Bukan Hanya Tentang Gizi Buruk Lho!',
+					text: ['Kasus gizi buruk memang masih marak terjadi. Hal itu pun kerap membuat sebagian orang mempersepsikan malnutrisi adalah gizi buruk itu sendiri. Yang benar, gizi buruk adalah bagian dari malnutrisi, tepatnya malnutrisi berat...'],
+					author: 'Selengkapnya'
+				},
+				{
+					img: '',
+					date: 'Artikel 20 Januari 2018',
+					title: 'Derita Berlipat Pasien Kanker Alami Malnutrisi, Apa Penyebabnya?',
+					text: ['“Tak ada yang mau mengalami kanker”', 'Setidaknya pesan itu menjadi gambaran betapa mengerikannya kanker selama ini. Tak sedikit yang menyebutkan jika terkena kanker ibarat mengalami kutukan. Bukan berlebihan, karena kenyataannya, selama ini...'],
+					author: 'Selengkapnya'
+				},
+				{
+					img: '',
+					date: 'Artikel 20 Januari 2018',
+					title: 'Ini Alasan Kenapa Pasien Kanker Perlu Mengganti Pola Makannya',
+					text: ['Beban hidup orang memang kadang berbeda-beda. Ada yang karena faktor sosial-ekonomi, ada pula yang karena masalah kesehatan. Salah satu masalah kesehatan yang kerap mengancap nyawa adalah kanker. Bagi pasien kanker, tak ada cobaan yang maha berat, selain penyakit yang dialaminya...'],
+					author: 'Selengkapnya'
+				}
+			] %}
+			<div class="info__col">
+				<div class="info__article">
+					<div class="info__img" style="background-image: url(./img/{{ article.img }});"></div>
+					<div class="info__wrap">
+						<div class="info__date">{{ article.date }}</div>
+						<div class="info__title">{{ article.title }}</div>
+						<div class="info__text">
+							{% for text in article.text %}
+							<p>{{ text }}</p>
+							{% endfor %}
+						</div>
+					</div>
+					<div class="info__author">{{ article.author }}</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end info -->

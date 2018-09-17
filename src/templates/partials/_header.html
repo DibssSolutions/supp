@@ -1,0 +1,27 @@
+<!-- begin header -->
+<header class="header">
+	<div class="header__inner">
+		<a href="#" class="header__logo logo">
+			<img src="./img/logo.png" alt="logo">
+		</a>
+		<button class="header__btn-menu btn-menu js-btn-menu" type="button">
+			<span class="btn-menu__line"></span>
+			<span class="btn-menu__line"></span>
+			<span class="btn-menu__line"></span>
+		</button>
+		<div class="header__right">
+			<div class="header__search search">
+				<button class="search__btn" type="button">{{ mixins.icon('search') }}</button>
+				<div class="search__input"><input type="text"></div>
+			</div>
+			<div class="header__nav nav">
+				<ul class="nav__list">
+					{% for text in ['home', 'produk', 'resep', 'artikel', 'imt kalkulator'] %}
+					<li class="nav__item{% if loop.first %} is-active{% endif %}"><a href="#" class="nav__link">{{ text }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- end header -->
