@@ -84,6 +84,7 @@
         width: 496px
         margin: 0 64px
     &__input
+        padding-left: 16px
         font-size: 16px
         height: 32px
         width: 96px
@@ -130,13 +131,24 @@
         height: 18px
         border-radius: 9px
     .noUi-tooltip
-        background: url(../img/slider_tooltip.png) no-repeat
-        padding: 50px 8px
-        transform: translate(-49%,25%)
         border: none
         color: red
-        background-position: 0 0
-    .noUi-horizontal .noUi-handle
+        padding: 0
+        padding-bottom: 50px
+        font-weight: 700
+        background: none
+        &:after
+            content: ''
+            position: absolute
+            top: -12px
+            left: 50%
+            transform: translateX(-50%)
+            background: url(../img/slider_tooltip.png) no-repeat
+            z-index: -1
+            width: 71px
+            height: 111px
+            background-size: cover
+    .noUi-handle
         height: 0
         width: 0
 
