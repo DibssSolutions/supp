@@ -1,0 +1,53 @@
+.product-page
+	background-color: #d88826
+	min-height: 100vh
+	display: flex
+	&__layout
+		// padding: 11px 8px 12px
+		position: relative
+		max-width: 1905px
+		max-height: 937px
+		width: 100%
+		// height: 100%
+		margin: auto
+		background: url(../img/product-page_bg.jpg) no-repeat 50% 50%
+		background-size: cover
+	&__inner
+		max-width: 1414px
+		margin: 0 auto
+		padding: 120px 0 169px
+		display: flex
+	&__corner-img
+		position: absolute
+		img
+			display: block
+			width: 100%
+		&_left
+			left: 0
+			top: 0
+			max-width: 421px
+			max-height: 661px
+		&_right
+			bottom: 0
+			right: 0
+	&__wrap
+		flex-basis: 50%
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+	&__details
+		max-width: 597px
+	&__title
+		color: #d59744
+		font-size: 48px
+		font-family: $montserrat
+		max-width: 295px
+		margin-bottom: 34px
+		text-transform: uppercase
+	&__text
+		margin-bottom: 45px
+		color: #737374
+		font-family: $montserrat
+		font-size: 18px
+
+.ingredient-name

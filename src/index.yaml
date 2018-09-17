@@ -3,3 +3,5 @@ ProjectTitle: supportan-website
 PageList:
 - file: page.html
   ready: 50
+- file: product-page.html
+  ready: 50
