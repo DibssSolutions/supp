@@ -1,0 +1,61 @@
+<div class="calc">
+    <div class="calc__hero" style="background-image: url(img/calculator_bg.jpg);">
+        <div class="calc__container">
+            <h2 class="calc__title">
+                Kalkulator IMT
+            </h2>
+            <div class="calc__subtitle">
+                Ketahui Indeks Massa Tubuhmu di Sini
+            </div>
+        </div>
+    </div>
+    <div class="calc__container">
+        <section class="calc__descr">
+            <h3 class="calc__descr-title">
+                Kenali indeks massa tubuhmu lebih jauh!
+            </h3>
+            <p>
+                Tubuh kita memerlukan nutrisi sebagai sumber energi untuk menjaga kelangsungan hidup. Jika seseorang memiliki nutrisi yang
+                tidak sesuai, maka Ia bisa mengalami kekurangan nutrisi atau kelebihan nutrisi dan tubuh menjadi lebih rentan
+                terhadap penyakit.
+            </p>
+            <p>
+                Dengan mengetahui indeks massa tubuh, angka BMI tubuh kamu bisa mengetahui apa saja nutrisi yang diperlukan untuk tubuh agar
+                sesuai dengan kebutuhanmu.
+            </p>
+            <div class="calc__definition">
+                IMT: Indeks Massa Tubuh
+            </div>
+
+
+
+
+        </section>
+        <div class="calc__form">
+            <form action="/" class="calculator" style="background-image: url(img/calc-form_bg.jpg);">
+                <h4 class="calculator__title">
+                    <span>{{mixins.icon('scale')}}</span>
+                    <span>Hitung Angka IMT</span>
+                </h4>
+                <div class="calculator__group">
+                    <label for="umur" class="blue-label">Umur</label>
+                    <input type="text" class="calculator__input" id="umur">
+                </div>
+                <div class="calculator__group js-range-container">
+                    <label for="height" class="calculator__label">Tinggi badan (cm)</label>
+                    <div class="js-range-slider calculator__range" data-range-max="48900" data-range-min="199"></div>
+                    <input type="text" class="calculator__input js-input" id="height">
+                </div>
+                <div class="calculator__group js-range-container">
+                    <label for="weight" class="calculator__label">Berat Badan (kg)</label>
+                    <div class="js-range-slider calculator__range" data-range-max="48900" data-range-min="199"></div>
+                    <input type="text" class="calculator__input js-input" id="weight">
+                </div>
+                <div class="calculator__group js-range-container">
+                    <label for="result" class="blue-label">Angka IMT kamu</label>
+                    <div class="js-result-slider calculator__result" data-range-max="48900" data-range-min="199"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
