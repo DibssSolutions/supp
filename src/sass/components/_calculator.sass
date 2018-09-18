@@ -107,7 +107,6 @@
             font-size: 9px
             color: #979797
             line-height: 1
-            
     &__input
         font-family: $montserrat
         font-size: 16px
@@ -115,6 +114,13 @@
         width: 96px
         border: 2px solid #cccccc
         text-align: center
+    &__result-descr
+        font-family: $montserrat
+        font-size: 16px
+        font-weight: 400
+        line-height: 1.5
+        color: #6b6b6b
+        margin-left: 170px
 
 
 
@@ -156,23 +162,23 @@
         height: 18px
     .noUi-base
         height: 18px
-        background: linear-gradient(to right, #f3b000, #d51400)
-        border-radius: 9px
-    .noUi-connects
-        height: 18px
-        background: linear-gradient(to right, #f3b000, #d51400)
-        border-radius: 9px
+        // background: linear-gradient(to right, #f3b000, #d51400)
+        // border-radius: 9px
         &:before
             position: absolute
             content: ''
             top: 0
-            left: -20px
-            right: -20px
+            left: -10px
+            right: -10px
             bottom: 0
             background: linear-gradient(to right, #f3b000, #d51400)
             height: 18px
             border-radius: 9px
-            width: 710px
+    .noUi-connects
+        height: 18px
+        background: linear-gradient(to right, #f3b000, #d51400)
+        border-radius: 9px
+
 
     &.noUi-horizontal 
         .noUi-handle
@@ -206,5 +212,4 @@
             width: 71px
             height: 111px
             background-size: cover
-
-
+            

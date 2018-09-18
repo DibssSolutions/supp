@@ -5,10 +5,11 @@ title: recipe page
 
 {% block content %}
 	
-	{% include "partials/_header.html" %}
+	{{ header.block(big = true, max = true, white = true) }}
 	{% include "partials/recipe/_hero-rec.html" %}
 	{% include "partials/recipe/_specification.html" %}
-	
+	{% include "partials/recipe/_healthy.html" %}
 	{# {% include "partials/_footer.html" %} #}
+	{{ footer.block(small = true) }}
 
 {% endblock %}
