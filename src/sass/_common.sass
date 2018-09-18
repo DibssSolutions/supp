@@ -2,7 +2,7 @@ body
 	font-family: $openSans
 	font-size: 16px 
 	line-height: 1.4
-	+font-smoothing
+	// +font-smoothing
 	background-color: $white 
 	min-width: 1240px 
 
@@ -11,11 +11,57 @@ body
 	font-size: 60px
 	font-weight: 700
 	line-height: 1.2 
+
+.title-lg
+	font-family: $verdanaBold
+	font-size: 72px
+	font-weight: 700
+	line-height: 1
 	
+.title-bg
+	position: relative
+	z-index: 1
+	padding: 24px 110px 53px 117px
+	color: #0d70b7
+	font-family: $budidaya
+	font-size: 75px
+	font-weight: 400
+	line-height: 1.2
+	vertical-align: top
+	display: inline-block
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: -1
+		content: "" 
+		opacity: 0.96
+		background-position: 0 0 
+		background-size: 100% 100%
+		background-image: url(../img/title-bg.png) 
+		background-repeat: no-repeat
+
+.title-sm
+	font-family: $montserrat
+	font-size: 36px
+	font-weight: 400
+	line-height: 1
+
 .title-xs
 	font-family: $openSans
 	font-size: 24px
 	font-weight: 700 
+
+.text-upper
+	text-transform: uppercase
+	
+.color-blue
+	color: #0d70b7
+	
+.text-center
+	text-align: center
 
 .line
 	margin: 0 19px

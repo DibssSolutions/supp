@@ -1,0 +1,56 @@
+.specification
+	color: #fafcfe
+	padding: 40px 0 63px
+	background-color: #f3951b
+	background-position: center 
+	background-size: cover
+	&__inner
+		margin: 0 auto
+		padding: 0 15px
+		max-width: 1625px
+	&__wrap
+		+clr
+	&__left
+		float: left
+		width: 50%
+		+clr
+	&__img-wrap
+		float: right
+		width: 50%
+		+clr
+	&__img
+		position: relative
+		padding: 44px 29px 30px 0
+		max-width: 675px
+		float: right
+		&:before
+			position: absolute
+			content: "" 
+			top: 0
+			right: 0
+			bottom: 0
+			left: 113px
+			background-color: $white 
+		img
+			position: relative
+			z-index: 1
+			max-width: 100%
+			display: block
+	&__content
+		padding-right: 30px
+		width: 100%
+		max-width: 755px
+		float: right
+	&__title-sm
+		margin-bottom: 48px
+	&__description
+		font-size: 24px
+		max-width: 500px
+	&__buttons
+		&:not(:first-child)
+			margin-top: 30px
+	&__footer
+		position: relative
+		z-index: 1
+		top: -87px
+		height: 0

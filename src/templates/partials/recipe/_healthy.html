@@ -1,0 +1,55 @@
+<!-- begin healthy -->
+<div class="healthy">
+	<div class="healthy__inner inner">
+		<!-- begin tabs -->
+		<div class="tabs" data-tabs>
+			<div class="tabs__out">
+				<div class="tabs__search search-md">
+					<form action="/">
+						<div class="search-md__input"><input type="text" placeholder="Tulis menu"></div>
+						<button class="search-md__button" type="submit">{{ mixins.icon('search') }}</button>
+					</form>
+				</div>
+				<ul class="tabs__list inner-sm">
+					{% for item in [
+						{
+							id: 'food',
+							text: 'food',
+							icon: 'cutlery'
+						},
+						{
+							id: 'drink',
+							text: 'drink',
+							icon: 'fruit'
+						}
+						] %}
+						<li class="tabs__item" data-tabs-control="{{ item.id }}">
+							<span class="tabs__icon">{{ mixins.icon( item.icon ) }}</span>
+							{{ item.text }}
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="tabs__wrap" data-tabs-wrapper>
+				<div class="tabs__container" data-tabs-container="food">
+					<h3 class="tabs__title-md title-md">Resep Sehat Lainnya</h3>
+					<div class="slider-recipe js-slider-recipe">
+						<div class="slider-recipe__slide"><img src="./img/slider-recipe-img.png" alt="img"></div>
+						<div class="slider-recipe__slide"><img src="./img/slider-recipe.png" alt="img"></div>
+						<div class="slider-recipe__slide"><img src="./img/slider-recipe.png" alt="img"></div>
+					</div>
+				</div>
+				<div class="tabs__container" data-tabs-container="drink">
+					<h3 class="tabs__title-md title-md">2Resep Sehat Lainnya</h3>
+					<div class="slider-recipe js-slider-recipe">
+						<div class="slider-recipe__slide"><img src="./img/slider-recipe-img.png" alt="img"></div>
+						<div class="slider-recipe__slide"><img src="./img/slider-recipe.png" alt="img"></div>
+						<div class="slider-recipe__slide"><img src="./img/slider-recipe.png" alt="img"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end tabs -->
+	</div>
+</div>
+<!-- end healthy -->
