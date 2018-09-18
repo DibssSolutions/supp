@@ -1,4 +1,5 @@
 .calc
+    margin-bottom: 1000px
     &__container
         max-width: 1100px
         padding: 0 25px
@@ -47,11 +48,11 @@
         margin-bottom: 56px
 
 .calculator
+    padding: 40px 60px
+    font-family: $arial
     border-radius: 10px
     background-color: $white
     box-shadow: 0px 2px 21px 0 rgba(0,0,0,0.2)
-    font-family: $arial
-    padding-bottom: 50px
     background-size: contain
     background-position: 0 0
     background-repeat: no-repeat
@@ -64,6 +65,7 @@
         display: flex
         justify-content: center
         align-items: center
+        margin-bottom: 36px
         .icon
             font-size: 96px
             margin-right: 39px
@@ -72,6 +74,8 @@
         display: flex
         align-items: center
         justify-content: center
+        &_result
+            margin-top: 100px
     &__label
         width: 204px
         padding: 7px 10px 5px
@@ -83,12 +87,34 @@
     &__range
         width: 496px
         margin: 0 64px
+        position: relative
+    &__down
+        position: absolute
+        text-align: center
+        transform: translateX(-50%)
+        top: -46px
+        left: calc(50% + 7px)
+        display: flex
+        flex-flow: column
+        font-family: $montserrat
+        font-weight: 300
+        color: #979797
+        line-height: 1
+        span 
+            display: inline-block
+
+        .icon
+            font-size: 9px
+            color: #979797
+            line-height: 1
+            
     &__input
-        padding-left: 16px
+        font-family: $montserrat
         font-size: 16px
         height: 32px
         width: 96px
         border: 2px solid #cccccc
+        text-align: center
 
 
 
@@ -97,7 +123,8 @@
     font-size: 18px
     line-height: 1.67
     color: #1b77b9
-
+.mr-60
+    margin-right: 60px
 
 .noUi-horizontal .noUi-handle
     width: 18px
@@ -107,7 +134,7 @@
     box-shadow: none
     &:before,
     &:after
-        display: none
+        opacity: 0
 .noUi-connects,
 .noUi-base
     background: #979797
@@ -120,35 +147,64 @@
 .noUi-horizontal
     height: 4px
 
+
 .calculator__result
-    margin-top: 100px
     pointer-events: none
     width: 690px
+    margin-left: 40px
+    &.noUi-horizontal
+        height: 18px
     .noUi-base
         height: 18px
-    .noUi-base, .noUi-connects
-        background: linear-gradient(to right, red, blue)
-        height: 18px
+        background: linear-gradient(to right, #f3b000, #d51400)
         border-radius: 9px
+    .noUi-connects
+        height: 18px
+        background: linear-gradient(to right, #f3b000, #d51400)
+        border-radius: 9px
+        &:before
+            position: absolute
+            content: ''
+            top: 0
+            left: -20px
+            right: -20px
+            bottom: 0
+            background: linear-gradient(to right, #f3b000, #d51400)
+            height: 18px
+            border-radius: 9px
+            width: 710px
+
+    &.noUi-horizontal 
+        .noUi-handle
+            height: 0
+            width: 0
+            right: 0 !important
     .noUi-tooltip
         border: none
         color: red
         padding: 0
-        padding-bottom: 50px
+        padding-bottom: 36px
         font-weight: 700
         background: none
+        font-family: $arial
+        font-size: 18px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: 1.67
+        letter-spacing: normal
+        text-align: left
+        color: #e9082f
         &:after
             content: ''
             position: absolute
-            top: -12px
+            top: -20px
             left: 50%
             transform: translateX(-50%)
-            background: url(../img/slider_tooltip.png) no-repeat
+            background: url(../img/range_tooltip_v2.svg) no-repeat
             z-index: -1
             width: 71px
             height: 111px
             background-size: cover
-    .noUi-handle
-        height: 0
-        width: 0
+
 

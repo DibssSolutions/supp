@@ -49,7 +49,8 @@ function initRange(slider) {
     range: {
       min: minSlider,
       max: maxSlider
-    }
+    },
+    format: wNumb({ decimals: 0 })
   });
 }
 

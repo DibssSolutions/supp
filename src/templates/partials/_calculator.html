@@ -38,20 +38,30 @@
                     <span>Hitung Angka IMT</span>
                 </h4>
                 <div class="calculator__group">
-                    <label for="umur" class="blue-label">Umur</label>
+                    <label for="umur" class="blue-label mr-60">Umur</label>
                     <input type="text" class="calculator__input" id="umur">
                 </div>
                 <div class="calculator__group js-range-container">
                     <label for="height" class="calculator__label">Tinggi badan (cm)</label>
-                    <div class="js-range-slider calculator__range" data-range-max="230" data-range-min="100"></div>
+                    <div class="js-range-slider calculator__range" data-range-max="230" data-range-min="100">
+                        <div class="calculator__down">
+                            <span>slide</span>
+                            <span>{{mixins.icon('down')}}</span>
+                        </div>
+                    </div>
                     <input type="text" class="calculator__input js-input js-height-range " id="height">
                 </div>
                 <div class="calculator__group js-range-container">
                     <label for="weight" class="calculator__label">Berat Badan (kg)</label>
-                    <div class="js-range-slider  calculator__range" data-range-max="180" data-range-min="40"></div>
+                    <div class="js-range-slider  calculator__range" data-range-max="180" data-range-min="40">
+                        <div class="calculator__down">
+                            <span>slide</span>
+                            <span>{{mixins.icon('down')}}</span>
+                        </div>
+                    </div>
                     <input type="text" class="calculator__input js-input js-weight-range" id="weight">
                 </div>
-                <div class="calculator__group js-range-container">
+                <div class="calculator__group calculator__group_result js-range-container">
                     <label for="result" class="blue-label">Angka IMT kamu</label>
                     <div class="js-result-slider calculator__result" data-range-max="180" data-range-min="7.6"></div>
                 </div>
