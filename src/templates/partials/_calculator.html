@@ -1,4 +1,4 @@
-<div class="calc">
+<div class="calc" style="background-image: url(img/calculator_bottom_bg.png);">
     <div class="calc__hero" style="background-image: url(img/calculator_bg.jpg);">
         <div class="calc__container">
             <h2 class="calc__title">
@@ -34,10 +34,10 @@
         <div class="calc__form">
             <form action="/" class="calculator" style="background-image: url(img/calc-form_bg.jpg);">
                 <h4 class="calculator__title">
-                    <span>{{mixins.icon('scale')}}</span>
+                    <span>{{mixins.icon('scale_1')}}</span>
                     <span>Hitung Angka IMT</span>
                 </h4>
-                <div class="calculator__group">
+                <div class="calculator__group calculator__group_center">
                     <label for="umur" class="blue-label mr-60">Umur</label>
                     <input type="text" class="calculator__input" id="umur">
                 </div>
@@ -63,11 +63,14 @@
                 </div>
                 <div class="calculator__group calculator__group_result js-range-container">
                     <label for="result" class="blue-label">Angka IMT kamu</label>
-                    <div class="js-result-slider calculator__result" data-range-max="180" data-range-min="7.6"></div>
+                    <div class="js-result-slider calculator__result" data-range-max="180" data-range-min="7.6">
+                        <div class="calculator__result-descr">
+                            Kamu termasuk kategori Normal.
+                            <br> Jaga kesehatanmu dengan asupan nutrisi yang sesuai dan olahraga secara teratur
+                        </div>
+                    </div>
                 </div>
-                <div class="calculator__result-descr">
-                    Kamu termasuk kategori Normal. Jaga kesehatanmu dengan asupan nutrisi yang sesuai dan olahraga secara teratur
-                </div>
+
             </form>
         </div>
     </div>
