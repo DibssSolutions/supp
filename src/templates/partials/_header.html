@@ -1,5 +1,7 @@
+{% import "partials/_mixins.html" as mixins %}
+{% macro block(big, wide, max, white) %}
 <!-- begin header -->
-<header class="header js-header">
+<header class="header js-header{% if big %} header_big{% endif %}{% if white %} header_white{% endif %}{% if wide %} header_wide{% endif %}{% if max %} header_max{% endif %}">
 	<div class="header__inner">
 		<a href="./index.html" class="header__logo logo">
 			<img src="./img/logo.png" alt="logo">
@@ -27,3 +29,4 @@
 	</div>
 </header>
 <!-- end header -->
+{% endmacro %}

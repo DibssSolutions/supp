@@ -5,8 +5,8 @@ title: Index page
 
 {% block content %}
 	
-	{% include "partials/_header.html" %}
+	{{ header.block(big = true, wide = true) }}
 	{% include "partials/product-page/_product-page.html" %}
-	{% include "partials/_footer.html" %}
+	{{ footer.block(absolute = true) }}
 
 {% endblock %}

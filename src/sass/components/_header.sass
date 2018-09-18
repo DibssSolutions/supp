@@ -10,19 +10,31 @@
 		padding: 0 30px
 		max-width: 1806px
 		+clr
+		.header_big &
+			padding: 51px 41px 0
+		.header_wide &
+			max-width: 1904px
+		.header_max &
+			max-width: 1920px
 	&__logo
 		float: left
 		margin-top: 30px
+		.header_big &
+			margin-top: 0
 	&__btn-menu
 		float: right
 	&__right
 		float: right
 		margin-top: 57px
 		transform: translateX(calc(100% - 68px))
+		.header_big &
+			margin-top: 0
+			transform: translateX(calc(100% - 92px))
 		.is-loaded &
 			transition: transform .3s ease-in-out
 		.is-open-menu &
 			transform: translateX(0)
+		
 
 .logo
 	width: 90px
@@ -45,7 +57,7 @@
 		height: 8px
 		width: 100%
 		transition: transform .3s
-		background-color: #FF9D11 
+		background-color: #FF9D11
 		&:first-child
 			top: 0
 			transform-origin: left top
@@ -61,6 +73,10 @@
 			transform-origin: left bottom
 			.is-open-menu &
 				transform: translate(11px, 0) rotate(-45deg)
+		.header_white &
+			background-color: $white
+	.header_big &
+		margin-top: 0
 .search
 	margin-right: 30px
 	vertical-align: top
@@ -72,7 +88,9 @@
 		background-color: transparent
 		.icon
 			font-size: 37px
-			color: #ff9d11 
+			color: #ff9d11
+			.header_white &
+				color: $white
 	&__wrap
 		float: right
 		padding-right: 35px
@@ -95,6 +113,11 @@
 			border-bottom: 3px solid #636161 
 			background-color: transparent 
 			display: block
+			.header_big &
+				color: #ff9d11
+			.header_white &
+				border-color: $white
+				// color: $white
 
 .nav
 	opacity: 0
@@ -120,4 +143,6 @@
 		color: $white 
 		transition: color .3s
 		+hover
-			color: #0d70b7 
+			color: #0d70b7
+		.header_big &
+			color: #ff9d11 

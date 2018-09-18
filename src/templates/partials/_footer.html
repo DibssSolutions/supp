@@ -1,5 +1,7 @@
+{% import "partials/_mixins.html" as mixins %}
+{% macro block(small, absolute, white) %}
 <!-- begin footer -->
-<footer class="footer">
+<footer class="footer{% if small %} footer_small{% endif %}{% if absolute %} footer_absolute{% endif %}{% if white %} footer_white{% endif %}">
 	<div class="footer__inner inner">
 		<div class="footer__copy">Copyright &copy; 2017 Fresenius Kabi Indonesia ALL RIGHTS RESERVED</div>
 		<ul class="footer__soc soc">
@@ -10,3 +12,4 @@
 	</div>
 </footer>
 <!-- end footer -->
+{% endmacro %}

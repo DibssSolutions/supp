@@ -5,8 +5,8 @@ title: recipe page
 
 {% block content %}
 	
-	{% include "partials/_header.html" %}
+	{{ header.block(big = true, max = true) }}
 	{% include "partials/_recipe_2.html" %}
-	{# {% include "partials/_footer.html" %} #}
+	{{ footer.block(small = true, white = true) }}
 
 {% endblock %}

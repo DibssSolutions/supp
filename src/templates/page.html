@@ -5,12 +5,12 @@ title: Index page
 
 {% block content %}
 	
-	{% include "partials/_header.html" %}
+	{{header.block()}}
 	{% include "partials/main/_hero.html" %}
 	{% include "partials/main/_video.html" %}
 	{% include "partials/main/_product.html" %}
 	{% include "partials/main/_recipes.html" %}
 	{% include "partials/main/_info.html" %}
-	{% include "partials/_footer.html" %}
+	{{footer.block()}}
 	{% include "partials/main/_modal.html" %}
 {% endblock %}
